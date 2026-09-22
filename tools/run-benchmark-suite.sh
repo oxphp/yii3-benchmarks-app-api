@@ -4,7 +4,7 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 COMPOSE_FILE="$ROOT_DIR/docker/benchmarks.compose.yml"
-RUNTIMES="${RUNTIMES:-frankenphp-classic frankenphp-worker roadrunner php-fpm freeunit rapira rapira-classic rapira-dispatcher}"
+RUNTIMES="${RUNTIMES:-frankenphp-classic frankenphp-worker roadrunner php-fpm freeunit rapira rapira-classic rapira-dispatcher oxphp oxphp-classic}"
 TARGETS="${TARGETS:-home postgres-orders}"
 OUTPUT_ROOT="${OUTPUT_ROOT:-$ROOT_DIR/runtime/benchmarks/$(date -u +%Y%m%dT%H%M%SZ)-suite}"
 
@@ -49,6 +49,8 @@ runtime_label() {
         rapira) echo "Rapira worker" ;;
         rapira-classic) echo "Rapira classic" ;;
         rapira-dispatcher) echo "Rapira dispatcher" ;;
+        oxphp) echo "OxPHP worker" ;;
+        oxphp-classic) echo "OxPHP classic" ;;
         *) echo "$1" ;;
     esac
 }

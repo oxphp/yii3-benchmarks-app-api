@@ -112,3 +112,13 @@ RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 COPY docker/runtimes/php-production.ini /usr/local/etc/php/conf.d/zz-production.ini
 WORKDIR /app
 CMD ["rapira", "serve", "--config", "docker/runtimes/rapira.toml"]
+
+FROM ghcr.io/oxphp/oxphp:0.11.0-php8.5.10-alpine3.23 AS oxphp
+COPY --from=php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/install-php-extensions
+RUN install-php-extensions intl pdo_pgsql
+COPY --from=composer /composer /usr/bin/composer
+RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+COPY docker/runtimes/php-production.ini /usr/local/etc/php/conf.d/zz-production.ini
+WORKDIR /app
+# Stay root like the FrankenPHP, RoadRunner and Rapira images; OxPHP would otherwise drop to www-data.
+CMD ["oxphp", "serve", "--user=root"]

@@ -20,6 +20,8 @@ made on the same machine with the same settings and minimal background activity.
 | `rapira` | Rapira worker | A persistent Yii worker using [yii-runner-rapira](https://github.com/yiisoft/yii-runner-rapira) |
 | `rapira-classic` | Rapira classic | A fresh Yii application per request; grouped with non-worker runtimes |
 | `rapira-dispatcher` | Rapira dispatcher | A persistent Yii application using Rapira exchanges; grouped with worker runtimes |
+| `oxphp` | OxPHP worker | A persistent Yii worker using `worker-oxphp.php` |
+| `oxphp-classic` | OxPHP classic | A fresh Yii application per request through `public/index.php`; grouped with non-worker runtimes |
 
 Every runtime is an isolated Docker Compose profile defined in `docker/benchmarks.compose.yml`. Each run receives its
 own PostgreSQL and Valkey containers and uses the same source tree mounted at `/app`. The PostgreSQL database is seeded
@@ -34,7 +36,7 @@ The runtime configs use a production-oriented benchmark baseline:
 - OPcache timestamp validation is disabled. **Restart the runtime after changing PHP files**, including
   files in the mounted source tree. The benchmark suite rebuilds and restarts each runtime automatically.
 - FPM, FreeUnit, Rapira and FrankenPHP workers recycle after 10,000 requests; RoadRunner uses its
-  memory supervisor. API body limits are 8 MiB, and request/queue timeouts are configured where supported.
+  memory supervisor. OxPHP has no request-count recycling, so its workers live for the whole run. API body limits are 8 MiB, and request/queue timeouts are configured where supported.
 - HTTP readiness checks gate benchmark startup. Containers have a 45-second shutdown grace period,
   bounded Docker logs, and an increased open-file limit. Nginx access logging is disabled to match the
   other servers, while errors remain logged. FastCGI keepalive is intentionally disabled so idle Nginx
@@ -56,6 +58,7 @@ Server releases checked on 2026-09-22 are pinned in the benchmark Dockerfile and
 | RoadRunner | [2025.1.15](https://github.com/roadrunner-server/roadrunner/releases/tag/v2025.1.15) |
 | FreeUnit | [1.36.1](https://github.com/freeunitorg/freeunit/releases/tag/1.36.1) |
 | Rapira (all modes) | [0.8.1](https://github.com/rapira-rs/rapira/releases/tag/v0.8.1) |
+| OxPHP (both modes) | [0.11.0](https://github.com/oxphp/oxphp/releases/tag/v0.11.0) |
 | Nginx | [1.31.6 (mainline)](https://nginx.org/en/download.html) |
 | PostgreSQL | [18.6](https://www.postgresql.org/support/versioning/) |
 | Valkey | [9.1.2](https://github.com/valkey-io/valkey/releases/tag/9.1.2) |
@@ -63,6 +66,16 @@ Server releases checked on 2026-09-22 are pinned in the benchmark Dockerfile and
 FreeUnit's published `latest-php8.5` image still contains 1.35.5. Its build target therefore compiles
 the checksummed 1.36.1 release source against PHP 8.5.10, with TLS and compression support. Optional
 JavaScript routing and OpenTelemetry modules are not built; the benchmark does not use them.
+OxPHP is built from its published `0.11.0-php8.5.10-alpine3.23` image, which is Alpine-based and ZTS, like every
+OxPHP release; the other runtimes use Debian images. The base image changes the bundled libpq: Alpine 3.23 ships
+libpq 18, where `pdo_pgsql` closes a prepared statement with a protocol-level message, while Debian bookworm ships
+libpq 15, where it sends a separate `DEALLOCATE` statement and waits for the reply. The application code and the
+queries it runs are the same, but `/postgres/orders` results include that difference.
+
+OxPHP is configured through environment variables, kept in `docker/runtimes/oxphp.env` and
+`docker/runtimes/oxphp-classic.env`. Both containers run as root like the FrankenPHP, RoadRunner and Rapira
+containers (`oxphp serve --user=root`); without it OxPHP drops to `www-data` after binding.
+
 Version pins should be refreshed from upstream releases when updating the benchmark baseline.
 
 Two endpoints are benchmarked:
@@ -238,6 +251,7 @@ tools/render-benchmark-report.* HTML report generator
 worker-frankenphp.php           FrankenPHP persistent worker entry point
 worker-roadrunner.php           RoadRunner persistent worker entry point
 worker-rapira.php               Rapira entry point for all three modes
+worker-oxphp.php                OxPHP persistent worker entry point
 ```
 
 The remaining application-template Docker files support development and tests. The benchmark matrix specifically uses
