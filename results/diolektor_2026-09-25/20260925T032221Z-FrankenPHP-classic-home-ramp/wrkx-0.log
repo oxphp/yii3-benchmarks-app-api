@@ -1,0 +1,123 @@
+Running 30s test @ http://localhost:9991/
+  16 threads and 256 connections
+  Thread calibration: mean lat.: 2.819ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.900ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.924ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.835ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.792ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.806ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.891ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 3.182ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.868ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.907ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.910ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.866ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.861ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.822ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.861ms, rate sampling interval: 10ms
+  Thread calibration: mean lat.: 2.834ms, rate sampling interval: 10ms
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.94ms  572.09us   7.02ms   71.44%
+    Req/Sec   164.07    152.88     1.78k    73.84%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    2.90ms
+ 75.000%    3.27ms
+ 90.000%    3.64ms
+ 99.000%    4.68ms
+ 99.900%    5.64ms
+ 99.990%    6.63ms
+ 99.999%    7.02ms
+100.000%    7.02ms
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       1.436     0.000000            1         1.00
+       2.257     0.100000         5014         1.11
+       2.473     0.200000        10011         1.25
+       2.633     0.300000        14962         1.43
+       2.773     0.400000        19972         1.67
+       2.905     0.500000        24973         2.00
+       2.969     0.550000        27424         2.22
+       3.037     0.600000        29902         2.50
+       3.109     0.650000        32420         2.86
+       3.183     0.700000        34874         3.33
+       3.265     0.750000        37355         4.00
+       3.313     0.775000        38645         4.44
+       3.361     0.800000        39862         5.00
+       3.417     0.825000        41088         5.71
+       3.481     0.850000        42340         6.67
+       3.555     0.875000        43572         8.00
+       3.595     0.887500        44207         8.89
+       3.643     0.900000        44843        10.00
+       3.697     0.912500        45465        11.43
+       3.753     0.925000        46067        13.33
+       3.829     0.937500        46690        16.00
+       3.875     0.943750        47005        17.78
+       3.933     0.950000        47317        20.00
+       3.997     0.956250        47630        22.86
+       4.069     0.962500        47934        26.67
+       4.159     0.968750        48241        32.00
+       4.207     0.971875        48399        35.56
+       4.271     0.975000        48558        40.00
+       4.335     0.978125        48714        45.71
+       4.407     0.981250        48863        53.33
+       4.495     0.984375        49023        64.00
+       4.535     0.985938        49098        71.11
+       4.591     0.987500        49178        80.00
+       4.643     0.989062        49257        91.43
+       4.699     0.990625        49335       106.67
+       4.755     0.992188        49407       128.00
+       4.795     0.992969        49450       142.22
+       4.831     0.993750        49486       160.00
+       4.871     0.994531        49524       182.86
+       4.939     0.995313        49566       213.33
+       5.015     0.996094        49602       256.00
+       5.059     0.996484        49623       284.44
+       5.115     0.996875        49641       320.00
+       5.183     0.997266        49660       365.71
+       5.271     0.997656        49680       426.67
+       5.347     0.998047        49699       512.00
+       5.403     0.998242        49709       568.89
+       5.451     0.998437        49719       640.00
+       5.511     0.998633        49728       731.43
+       5.575     0.998828        49739       853.33
+       5.679     0.999023        49749      1024.00
+       5.727     0.999121        49753      1137.78
+       5.767     0.999219        49758      1280.00
+       5.823     0.999316        49762      1462.86
+       5.867     0.999414        49767      1706.67
+       5.915     0.999512        49772      2048.00
+       5.987     0.999561        49775      2275.56
+       6.043     0.999609        49777      2560.00
+       6.075     0.999658        49779      2925.71
+       6.207     0.999707        49782      3413.33
+       6.235     0.999756        49784      4096.00
+       6.267     0.999780        49786      4551.11
+       6.283     0.999805        49787      5120.00
+       6.367     0.999829        49788      5851.43
+       6.523     0.999854        49789      6826.67
+       6.559     0.999878        49790      8192.00
+       6.627     0.999890        49791      9102.22
+       6.711     0.999902        49792     10240.00
+       6.711     0.999915        49792     11702.86
+       6.719     0.999927        49793     13653.33
+       6.719     0.999939        49793     16384.00
+       6.759     0.999945        49794     18204.44
+       6.759     0.999951        49794     20480.00
+       6.759     0.999957        49794     23405.71
+       6.979     0.999963        49795     27306.67
+       6.979     0.999969        49795     32768.00
+       6.979     0.999973        49795     36408.89
+       6.979     0.999976        49795     40960.00
+       6.979     0.999979        49795     46811.43
+       7.023     0.999982        49796     54613.33
+       7.023     1.000000        49796          inf
+#[Mean    =        2.944, StdDeviation   =        0.572]
+#[Max     =        7.020, Total count    =        49796]
+#[Buckets =           27, SubBuckets     =         2048]
+----------------------------------------------------------
+  74879 requests in 30.08s, 15.28MB read
+Requests/sec:   2489.26
+Transfer/sec:    520.22KB
+WRKX_RESULT {"durationUs":30080787,"requests":74879,"responses":74879,"errors":0,"bytes":16024106,"latencyAvgUs":2944.362,"latencyP95Us":3933.000,"latencyP99Us":4675.000}

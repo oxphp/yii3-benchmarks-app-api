@@ -777,7 +777,8 @@ function parseDockerStats(string $dockerStatsFile): array
         $service = (string) ($record['service'] ?? 'unknown');
         $service = match ($service) {
             'frankenphp-classic', 'frankenphp-worker', 'roadrunner',
-            'php', 'nginx', 'freeunit', 'rapira', 'rapira-classic', 'rapira-dispatcher' => 'app',
+            'php', 'nginx', 'freeunit', 'rapira', 'rapira-classic', 'rapira-dispatcher',
+            'oxphp', 'oxphp-classic' => 'app',
             default => $service,
         };
         $second = max(0, (int) floor($timestamp - $firstTimestamp));
