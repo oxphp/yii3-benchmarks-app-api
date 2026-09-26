@@ -113,9 +113,7 @@ COPY docker/runtimes/php-production.ini /usr/local/etc/php/conf.d/zz-production.
 WORKDIR /app
 CMD ["rapira", "serve", "--config", "docker/runtimes/rapira.toml"]
 
-# Nightly build of oxphp/oxphp commit e05777b0 (PHP 8.5.11, linux/amd64), pinned by digest: no release
-# includes its client-disconnect fix yet. Replace with a release tag once one does.
-FROM ghcr.io/oxphp/oxphp@sha256:a72122d37389f4b0d0b4e5ec6cb0ba615a357dcdfc98d4f25d32706f5a7c3994 AS oxphp
+FROM ghcr.io/oxphp/oxphp:0.12.0-php8.5.11-alpine3.23 AS oxphp
 COPY --from=php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/install-php-extensions
 RUN install-php-extensions intl pdo_pgsql
 COPY --from=composer /composer /usr/bin/composer

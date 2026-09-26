@@ -1,0 +1,1622 @@
+{
+  "FrankenPHP-classic-DB-postgres-orders": {
+    "app_cpu_us_per_response": {
+      "max": 2616.5771427224777,
+      "median": 2404.637469264924,
+      "min": 2237.5575100576707,
+      "n": 8,
+      "spread_pct": 15.762028060748376
+    },
+    "highest_clean_stage": {
+      "max": 2500,
+      "median": 0.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": null
+    },
+    "max_rps": {
+      "max": 5017.204629531843,
+      "median": 4682.777286920276,
+      "min": 4302.595763371928,
+      "n": 8,
+      "spread_pct": 15.260364146634275
+    },
+    "relative_to_php_fpm": {
+      "max": 1.0764751545333235,
+      "median": 1.037227962047873,
+      "min": 0.9980198749585522,
+      "n": 8,
+      "spread_pct": 7.563937962091914
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 2331.446547435767,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 4831.76169320151
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 2237.5575100576707,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 5017.204629531843
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 2398.5486972966182,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4682.91767418199
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 2434.67791630167,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4617.846160244971
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 2494.2708653075497,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4349.498327313403
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 2616.5771427224777,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4302.595763371928
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 2410.7262412332307,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4682.636899658562
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 2384.5411783268028,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4739.350708552994
+      }
+    },
+    "total_errors": 0
+  },
+  "FrankenPHP-classic-home": {
+    "app_cpu_us_per_response": {
+      "max": 2153.169635681051,
+      "median": 2001.077272308251,
+      "min": 1863.0186178091758,
+      "n": 8,
+      "spread_pct": 14.499740808968612
+    },
+    "highest_clean_stage": {
+      "max": 5000,
+      "median": 2500.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": 200.0
+    },
+    "max_rps": {
+      "max": 7514.875663181411,
+      "median": 6988.761393519344,
+      "min": 6474.953558448096,
+      "n": 8,
+      "spread_pct": 14.879920005533902
+    },
+    "relative_to_php_fpm": {
+      "max": 1.0032482883577383,
+      "median": 0.9617923539853418,
+      "min": 0.935773657861568,
+      "n": 8,
+      "spread_pct": 7.015509139428931
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 1951.0422012651388,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 7179.640347773088
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 1863.0186178091758,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 7514.875663181411
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 2014.2355080036973,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 6946.023673667707
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 2021.6087982230777,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 6922.666893499104
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 2114.5828654123393,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 6596.491691124531
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 2153.169635681051,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 6474.953558448096
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 1987.9190366128046,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 7031.499113370982
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 1965.7751674292601,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 7123.963416260032
+      }
+    },
+    "total_errors": 0
+  },
+  "FrankenPHP-worker-DB-postgres-orders": {
+    "app_cpu_us_per_response": {
+      "max": 498.4593855636402,
+      "median": 449.293954938052,
+      "min": 409.58161610820815,
+      "n": 8,
+      "spread_pct": 19.78165263044466
+    },
+    "highest_clean_stage": {
+      "max": 5000,
+      "median": 5000.0,
+      "min": 5000,
+      "n": 8,
+      "spread_pct": 0.0
+    },
+    "max_rps": {
+      "max": 13370.94634878862,
+      "median": 12414.738425897642,
+      "min": 11250.853120143182,
+      "n": 8,
+      "spread_pct": 17.07722833872069
+    },
+    "relative_to_php_fpm": {
+      "max": 2.8457611268248417,
+      "median": 2.719347529909106,
+      "min": 2.673416434451172,
+      "n": 8,
+      "spread_pct": 6.337722210129957
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 444.33236503712556,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 12482.030433748358
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 409.58161610820815,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 13370.94634878862
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 454.25554483897844,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 12347.446418046928
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 456.5011021153098,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 12256.828610716993
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 470.76321951529445,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 11787.050216988302
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 498.4593855636402,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 11250.853120143182
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 438.2254303120395,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 12595.280511886309
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 432.6070674164435,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 12695.396545484204
+      }
+    },
+    "total_errors": 0
+  },
+  "FrankenPHP-worker-home": {
+    "app_cpu_us_per_response": {
+      "max": 224.504088213721,
+      "median": 211.22885764028098,
+      "min": 199.20451964322245,
+      "n": 8,
+      "spread_pct": 11.977325850799826
+    },
+    "highest_clean_stage": {
+      "max": 40000,
+      "median": 35000.0,
+      "min": 30000,
+      "n": 8,
+      "spread_pct": 28.57142857142857
+    },
+    "max_rps": {
+      "max": 48300.05008994824,
+      "median": 45356.022420965164,
+      "min": 42440.10141194446,
+      "n": 8,
+      "spread_pct": 12.919891042507087
+    },
+    "relative_to_php_fpm": {
+      "max": 6.470335679406891,
+      "median": 6.2710696875880965,
+      "min": 6.003174837911803,
+      "n": 8,
+      "spread_pct": 7.449460216009214
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 199.20451964322245,
+        "errors": 0,
+        "highest_clean_stage": 40000,
+        "max_rps": 48189.66102302829
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 201.34975906163254,
+        "errors": 0,
+        "highest_clean_stage": 40000,
+        "max_rps": 48300.05008994824
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 215.05082706629273,
+        "errors": 0,
+        "highest_clean_stage": 30000,
+        "max_rps": 44324.64573223671
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 205.5674253129574,
+        "errors": 0,
+        "highest_clean_stage": 40000,
+        "max_rps": 46407.11302492256
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 224.504088213721,
+        "errors": 0,
+        "highest_clean_stage": 30000,
+        "max_rps": 42440.10141194446
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 220.65390338096987,
+        "errors": 0,
+        "highest_clean_stage": 30000,
+        "max_rps": 43231.87222055238
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 221.7515255207479,
+        "errors": 0,
+        "highest_clean_stage": 30000,
+        "max_rps": 43329.30732916653
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 207.4068882142692,
+        "errors": 0,
+        "highest_clean_stage": 40000,
+        "max_rps": 46387.399109693615
+      }
+    },
+    "total_errors": 0
+  },
+  "FreeUnit-DB-postgres-orders": {
+    "app_cpu_us_per_response": {
+      "max": 2437.5136240014194,
+      "median": 2226.0921197963885,
+      "min": 2064.073513773568,
+      "n": 8,
+      "spread_pct": 16.775591041668513
+    },
+    "highest_clean_stage": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": null
+    },
+    "max_rps": {
+      "max": 4980.524821800081,
+      "median": 4570.149283979395,
+      "min": 4190.048751672228,
+      "n": 8,
+      "spread_pct": 17.29650435925272
+    },
+    "relative_to_php_fpm": {
+      "max": 1.060069352882733,
+      "median": 1.0341942148977248,
+      "min": 0.9354825814008078,
+      "n": 8,
+      "spread_pct": 12.046748056335439
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 2129.25615835021,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4802.252807177073
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 2064.073513773568,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4980.524821800081
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 2212.7844586892284,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4611.548615467411
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 2239.3997809035486,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4528.749952491378
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 2306.3093670794688,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4421.077400875372
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 2437.5136240014194,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4190.048751672228
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 2351.1337538466405,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4382.527887594431
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 2064.7701228881956,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4977.258268485294
+      }
+    },
+    "total_errors": 0
+  },
+  "FreeUnit-home": {
+    "app_cpu_us_per_response": {
+      "max": 1871.0392542661664,
+      "median": 1743.8418423459848,
+      "min": 1678.442818644063,
+      "n": 8,
+      "spread_pct": 11.044375180435173
+    },
+    "highest_clean_stage": {
+      "max": 5000,
+      "median": 5000.0,
+      "min": 2500,
+      "n": 8,
+      "spread_pct": 50.0
+    },
+    "max_rps": {
+      "max": 8480.882418130714,
+      "median": 8205.761943707708,
+      "min": 7599.7627182381075,
+      "n": 8,
+      "spread_pct": 10.737816986858375
+    },
+    "relative_to_php_fpm": {
+      "max": 1.1750065503941265,
+      "median": 1.119429799163361,
+      "min": 1.1004934028898878,
+      "n": 8,
+      "spread_pct": 6.656348398079831
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 1747.4910297880535,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 8196.236898825604
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 1706.4500290504757,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 8379.714558005626
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 1740.1926549039163,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 8215.28698858981
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 1757.2632760834813,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 8124.63810979905
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 1806.1596892724663,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 7883.286001267573
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 1871.0392542661664,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 7599.7627182381075
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 1678.442818644063,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 8480.882418130714
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 1679.3123371808988,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 8464.338975670458
+      }
+    },
+    "total_errors": 0
+  },
+  "OxPHP-classic-DB-postgres-orders": {
+    "app_cpu_us_per_response": {
+      "max": 3390.3080933729207,
+      "median": 3236.372921577393,
+      "min": 3064.1005416348967,
+      "n": 8,
+      "spread_pct": 10.079417905246592
+    },
+    "highest_clean_stage": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": null
+    },
+    "max_rps": {
+      "max": 3566.352391704271,
+      "median": 3363.5314712425497,
+      "min": 3196.0552156269473,
+      "n": 8,
+      "spread_pct": 11.00917827715551
+    },
+    "relative_to_php_fpm": {
+      "max": 0.7780526708597816,
+      "median": 0.765643957708067,
+      "min": 0.6986732481796045,
+      "n": 8,
+      "spread_pct": 10.367667880224257
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 3064.1005416348967,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 3566.352391704271
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 3075.8513733109435,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 3497.749623582244
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 3220.7224422779955,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 3384.7103562676634
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 3285.9137597360304,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 3342.352586217436
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 3252.0234008767898,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 3315.342511269929
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 3390.3080933729207,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 3196.0552156269473
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 3068.924476484814,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 3556.0585792503525
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 3252.3686836957727,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 3317.827266660944
+      }
+    },
+    "total_errors": 0
+  },
+  "OxPHP-classic-home": {
+    "app_cpu_us_per_response": {
+      "max": 2623.4590607353775,
+      "median": 2455.045890346022,
+      "min": 2336.2535132180506,
+      "n": 8,
+      "spread_pct": 11.698581629235749
+    },
+    "highest_clean_stage": {
+      "max": 2500,
+      "median": 0.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": null
+    },
+    "max_rps": {
+      "max": 6188.3149218467815,
+      "median": 5916.294500273769,
+      "min": 5524.384445514815,
+      "n": 8,
+      "spread_pct": 11.222066046597993
+    },
+    "relative_to_php_fpm": {
+      "max": 0.8573766514586778,
+      "median": 0.8161610926705936,
+      "min": 0.7548030233638355,
+      "n": 8,
+      "spread_pct": 12.567816453882527
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 2381.9784145706917,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 6100.133898713819
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 2357.9435422613406,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 6162.0616686114545
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 2552.7442299864556,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 5724.786993001353
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 2623.4590607353775,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 5524.384445514815
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 2567.075955035653,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 5637.399744618132
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 2528.113366121353,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 5732.455101833719
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 2336.2535132180506,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 6188.3149218467815
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 2359.035538576722,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 6145.388832485415
+      }
+    },
+    "total_errors": 0
+  },
+  "OxPHP-worker-DB-postgres-orders": {
+    "app_cpu_us_per_response": {
+      "max": 549.9321137142405,
+      "median": 507.55913925665357,
+      "min": 480.6015351674467,
+      "n": 8,
+      "spread_pct": 13.659605981744704
+    },
+    "highest_clean_stage": {
+      "max": 10000,
+      "median": 10000.0,
+      "min": 2500,
+      "n": 8,
+      "spread_pct": 75.0
+    },
+    "max_rps": {
+      "max": 12856.743853680193,
+      "median": 12289.456795834698,
+      "min": 11392.406160254695,
+      "n": 8,
+      "spread_pct": 11.915398033880633
+    },
+    "relative_to_php_fpm": {
+      "max": 2.870622549432078,
+      "median": 2.698745957137325,
+      "min": 2.635920994269577,
+      "n": 8,
+      "spread_pct": 8.696689458368253
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 480.6015351674467,
+        "errors": 0,
+        "highest_clean_stage": 10000,
+        "max_rps": 12856.743853680193
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 482.1926328044468,
+        "errors": 0,
+        "highest_clean_stage": 10000,
+        "max_rps": 12798.399476784845
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 540.9837128086241,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 11526.327060680273
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 526.787898507024,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 12053.753411130727
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 549.9321137142405,
+        "errors": 0,
+        "highest_clean_stage": 10000,
+        "max_rps": 11392.406160254695
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 526.0378984852534,
+        "errors": 0,
+        "highest_clean_stage": 10000,
+        "max_rps": 11911.263541484766
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 489.08038002805364,
+        "errors": 0,
+        "highest_clean_stage": 10000,
+        "max_rps": 12525.160180538669
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 486.2236948131561,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 12649.762853192957
+      }
+    },
+    "total_errors": 0
+  },
+  "OxPHP-worker-home": {
+    "app_cpu_us_per_response": {
+      "max": 178.02620773507806,
+      "median": 164.44216007533348,
+      "min": 145.83883552937039,
+      "n": 8,
+      "spread_pct": 19.57367392337959
+    },
+    "highest_clean_stage": {
+      "max": 50000,
+      "median": 50000.0,
+      "min": 40000,
+      "n": 8,
+      "spread_pct": 20.0
+    },
+    "max_rps": {
+      "max": 80875.82479864052,
+      "median": 73142.8500773088,
+      "min": 67930.25113468805,
+      "n": 8,
+      "spread_pct": 17.69902820339864
+    },
+    "relative_to_php_fpm": {
+      "max": 11.20515757933076,
+      "median": 10.240806208185894,
+      "min": 9.281388621669137,
+      "n": 8,
+      "spread_pct": 18.785327234528417
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 160.0703600828517,
+        "errors": 0,
+        "highest_clean_stage": 50000,
+        "max_rps": 75833.75276239871
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 156.7773087945919,
+        "errors": 0,
+        "highest_clean_stage": 50000,
+        "max_rps": 77335.94322962266
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 173.0990713255084,
+        "errors": 0,
+        "highest_clean_stage": 50000,
+        "max_rps": 70451.94739221889
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 178.02620773507806,
+        "errors": 0,
+        "highest_clean_stage": 50000,
+        "max_rps": 67930.25113468805
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 168.81396006781526,
+        "errors": 0,
+        "highest_clean_stage": 50000,
+        "max_rps": 70155.5872230139
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 169.21362308435886,
+        "errors": 0,
+        "highest_clean_stage": 40000,
+        "max_rps": 69497.7016648009
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 145.83883552937039,
+        "errors": 0,
+        "highest_clean_stage": 50000,
+        "max_rps": 80875.82479864052
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 150.88384844732576,
+        "errors": 0,
+        "highest_clean_stage": 50000,
+        "max_rps": 78758.98965824716
+      }
+    },
+    "total_errors": 0
+  },
+  "PHP-FPM-+-Nginx-DB-postgres-orders": {
+    "app_cpu_us_per_response": {
+      "max": 2587.5162089321334,
+      "median": 2394.9903153914374,
+      "min": 2277.1652825764972,
+      "n": 8,
+      "spread_pct": 12.958337424630143
+    },
+    "highest_clean_stage": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": null
+    },
+    "max_rps": {
+      "max": 4748.753834937224,
+      "median": 4511.665001995589,
+      "min": 4149.365977718416,
+      "n": 8,
+      "spread_pct": 13.285291726085358
+    },
+    "relative_to_php_fpm": {
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "n": 8,
+      "spread_pct": 0.0
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 2327.098179830124,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4656.996524480254
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 2295.1349392750667,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4698.548385790643
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 2468.3933573245704,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4350.23293799302
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 2462.8824509527512,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4366.333479510922
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 2486.8830482463363,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4321.98316452636
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 2587.5162089321334,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4149.365977718416
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 2311.55830221906,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4684.777648165248
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 2277.1652825764972,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 4748.753834937224
+      }
+    },
+    "total_errors": 0
+  },
+  "PHP-FPM-+-Nginx-home": {
+    "app_cpu_us_per_response": {
+      "max": 2042.4656366513047,
+      "median": 1912.1113451269957,
+      "min": 1853.7544854302182,
+      "n": 8,
+      "spread_pct": 9.86925534969581
+    },
+    "highest_clean_stage": {
+      "max": 5000,
+      "median": 2500.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": 200.0
+    },
+    "max_rps": {
+      "max": 7556.40723710665,
+      "median": 7268.353508435463,
+      "min": 6747.640395536554,
+      "n": 8,
+      "spread_pct": 11.127235908812946
+    },
+    "relative_to_php_fpm": {
+      "max": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "n": 8,
+      "spread_pct": 0.0
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 1887.194195000534,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 7447.783764357282
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 1866.5860540850808,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 7490.544215612713
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 1930.0679506917666,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 7147.42799245429
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 1894.1547395622251,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 7318.974983559268
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 1970.7022270369741,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 7049.238494486849
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 2042.4656366513047,
+        "errors": 0,
+        "highest_clean_stage": 0,
+        "max_rps": 6747.640395536554
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 1941.4781770915536,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 7217.732033311656
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 1853.7544854302182,
+        "errors": 0,
+        "highest_clean_stage": 2500,
+        "max_rps": 7556.40723710665
+      }
+    },
+    "total_errors": 0
+  },
+  "Rapira-classic-DB-postgres-orders": {
+    "app_cpu_us_per_response": {
+      "max": 2508.2171865889086,
+      "median": 2279.425486536728,
+      "min": 2264.5731144076717,
+      "n": 8,
+      "spread_pct": 10.68883688544785
+    },
+    "highest_clean_stage": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": null
+    },
+    "max_rps": {
+      "max": 4472.103401640037,
+      "median": 4389.535351707141,
+      "min": 3986.121025888625,
+      "n": 8,
+      "spread_pct": 11.071385393044121
+    },
+    "relative_to_php_fpm": {
+      "max": 1.0033335872795406,
+      "median": 0.9546626224922581,
+      "min": 0.939510572581517,
+      "n": 8,
+      "spread_pct": 6.685399972129015
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 2272.229937842007,
+        "errors": 141,
+        "highest_clean_stage": 0,
+        "max_rps": 4417.9407311728055
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 2279.8876804866286,
+        "errors": 94,
+        "highest_clean_stage": 0,
+        "max_rps": 4414.3358842361295
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 2278.9632925868273,
+        "errors": 205,
+        "highest_clean_stage": 0,
+        "max_rps": 4364.734819178152
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 2385.3883776003436,
+        "errors": 93,
+        "highest_clean_stage": 0,
+        "max_rps": 4202.623948669314
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 2417.985592924582,
+        "errors": 142,
+        "highest_clean_stage": 0,
+        "max_rps": 4180.718725801823
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 2508.2171865889086,
+        "errors": 99,
+        "highest_clean_stage": 0,
+        "max_rps": 3986.121025888625
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 2277.052639097699,
+        "errors": 167,
+        "highest_clean_stage": 0,
+        "max_rps": 4437.712554923596
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 2264.5731144076717,
+        "errors": 165,
+        "highest_clean_stage": 0,
+        "max_rps": 4472.103401640037
+      }
+    },
+    "total_errors": 1106
+  },
+  "Rapira-classic-home": {
+    "app_cpu_us_per_response": {
+      "max": 1923.2569835964116,
+      "median": 1812.6692324147884,
+      "min": 1765.762032766411,
+      "n": 8,
+      "spread_pct": 8.688565349575118
+    },
+    "highest_clean_stage": {
+      "max": 2500,
+      "median": 1250.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": 200.0
+    },
+    "max_rps": {
+      "max": 8049.00525715151,
+      "median": 7790.23593569195,
+      "min": 7341.144756635852,
+      "n": 8,
+      "spread_pct": 9.08650914245749
+    },
+    "relative_to_php_fpm": {
+      "max": 1.098275724450327,
+      "median": 1.073968624265775,
+      "min": 1.0477641099682042,
+      "n": 8,
+      "spread_pct": 4.70326724085215
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 1818.6996917707038,
+        "errors": 209,
+        "highest_clean_stage": 0,
+        "max_rps": 7803.52052709745
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 1765.762032766411,
+        "errors": 248,
+        "highest_clean_stage": 2500,
+        "max_rps": 8049.00525715151
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 1810.8371275018994,
+        "errors": 264,
+        "highest_clean_stage": 2500,
+        "max_rps": 7776.951344286449
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 1814.5013373276777,
+        "errors": 257,
+        "highest_clean_stage": 2500,
+        "max_rps": 7764.343555378531
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 1865.4411754338275,
+        "errors": 278,
+        "highest_clean_stage": 2500,
+        "max_rps": 7566.524155339901
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 1923.2569835964116,
+        "errors": 268,
+        "highest_clean_stage": 0,
+        "max_rps": 7341.144756635852
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 1787.7681639259918,
+        "errors": 249,
+        "highest_clean_stage": 0,
+        "max_rps": 7927.0598777736905
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 1775.1959365314797,
+        "errors": 237,
+        "highest_clean_stage": 0,
+        "max_rps": 7978.310524273646
+      }
+    },
+    "total_errors": 2010
+  },
+  "Rapira-dispatcher-DB-postgres-orders": {
+    "app_cpu_us_per_response": {
+      "max": 395.5882405984666,
+      "median": 361.57189574381187,
+      "min": 345.346627603381,
+      "n": 8,
+      "spread_pct": 13.895331353597173
+    },
+    "highest_clean_stage": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": null
+    },
+    "max_rps": {
+      "max": 14846.499522083279,
+      "median": 14155.929473815126,
+      "min": 13127.685887246851,
+      "n": 8,
+      "spread_pct": 12.142004790401058
+    },
+    "relative_to_php_fpm": {
+      "max": 3.2000393282592925,
+      "median": 3.1198363144200867,
+      "min": 3.0304671413134763,
+      "n": 8,
+      "spread_pct": 5.435291145309211
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 350.7901072565097,
+        "errors": 653,
+        "highest_clean_stage": 0,
+        "max_rps": 14552.615876586393
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 345.346627603381,
+        "errors": 803,
+        "highest_clean_stage": 0,
+        "max_rps": 14846.499522083279
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 370.335765572854,
+        "errors": 760,
+        "highest_clean_stage": 0,
+        "max_rps": 13920.916488666631
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 386.83566515725437,
+        "errors": 719,
+        "highest_clean_stage": 0,
+        "max_rps": 13460.464217406798
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 389.15777354196706,
+        "errors": 670,
+        "highest_clean_stage": 0,
+        "max_rps": 13333.199123534465
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 395.5882405984666,
+        "errors": 627,
+        "highest_clean_stage": 0,
+        "max_rps": 13127.685887246851
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 345.9108896745598,
+        "errors": 710,
+        "highest_clean_stage": 0,
+        "max_rps": 14592.049947721145
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 352.80802591476976,
+        "errors": 668,
+        "highest_clean_stage": 0,
+        "max_rps": 14390.942458963618
+      }
+    },
+    "total_errors": 5610
+  },
+  "Rapira-dispatcher-home": {
+    "app_cpu_us_per_response": {
+      "max": 130.16730455455405,
+      "median": 124.56203920612006,
+      "min": 116.46925686655197,
+      "n": 8,
+      "spread_pct": 10.996968077357115
+    },
+    "highest_clean_stage": {
+      "max": 2500,
+      "median": 2500.0,
+      "min": 2500,
+      "n": 8,
+      "spread_pct": 0.0
+    },
+    "max_rps": {
+      "max": 95775.50866254198,
+      "median": 90564.51866376496,
+      "min": 84317.10871473818,
+      "n": 8,
+      "spread_pct": 12.652195492083292
+    },
+    "relative_to_php_fpm": {
+      "max": 12.859598464833663,
+      "median": 12.488996257164551,
+      "min": 12.326895601467424,
+      "n": 8,
+      "spread_pct": 4.265377716488979
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 118.69170709124735,
+        "errors": 15307,
+        "highest_clean_stage": 2500,
+        "max_rps": 95775.50866254198
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 123.12480222838437,
+        "errors": 15437,
+        "highest_clean_stage": 2500,
+        "max_rps": 92894.22237937979
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 126.7661775499741,
+        "errors": 14483,
+        "highest_clean_stage": 2500,
+        "max_rps": 90191.79395079566
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 124.45661991970438,
+        "errors": 15122,
+        "highest_clean_stage": 2500,
+        "max_rps": 90937.24337673424
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 129.24454845043988,
+        "errors": 14413,
+        "highest_clean_stage": 2500,
+        "max_rps": 86895.22699138478
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 130.16730455455405,
+        "errors": 14233,
+        "highest_clean_stage": 2500,
+        "max_rps": 84317.10871473818
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 124.66745849253576,
+        "errors": 15179,
+        "highest_clean_stage": 2500,
+        "max_rps": 90093.180807567
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 116.46925686655197,
+        "errors": 15304,
+        "highest_clean_stage": 2500,
+        "max_rps": 95514.07319226023
+      }
+    },
+    "total_errors": 119478
+  },
+  "Rapira-worker-DB-postgres-orders": {
+    "app_cpu_us_per_response": {
+      "max": 416.3168592368226,
+      "median": 375.9765691106347,
+      "min": 359.4408806804786,
+      "n": 8,
+      "spread_pct": 15.127532731862267
+    },
+    "highest_clean_stage": {
+      "max": 0,
+      "median": 0.0,
+      "min": 0,
+      "n": 8,
+      "spread_pct": null
+    },
+    "max_rps": {
+      "max": 14418.608526963832,
+      "median": 14073.944740337553,
+      "min": 12932.690996870113,
+      "n": 8,
+      "spread_pct": 10.557932104386534
+    },
+    "relative_to_php_fpm": {
+      "max": 3.257862658959936,
+      "median": 3.09912825065246,
+      "min": 2.9412584138824664,
+      "n": 8,
+      "spread_pct": 10.215912975231504
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 365.3431942624777,
+        "errors": 703,
+        "highest_clean_stage": 0,
+        "max_rps": 14350.391569002877
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 361.9049859097797,
+        "errors": 654,
+        "highest_clean_stage": 0,
+        "max_rps": 14418.608526963832
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 375.1663889071225,
+        "errors": 624,
+        "highest_clean_stage": 0,
+        "max_rps": 14172.461446465035
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 384.00179662100385,
+        "errors": 619,
+        "highest_clean_stage": 0,
+        "max_rps": 13975.428034210072
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 383.75648884908315,
+        "errors": 628,
+        "highest_clean_stage": 0,
+        "max_rps": 13724.188691745294
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 416.3168592368226,
+        "errors": 582,
+        "highest_clean_stage": 0,
+        "max_rps": 12932.690996870113
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 376.786749314147,
+        "errors": 575,
+        "highest_clean_stage": 0,
+        "max_rps": 13779.14167483455
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 359.4408806804786,
+        "errors": 685,
+        "highest_clean_stage": 0,
+        "max_rps": 14361.239759078473
+      }
+    },
+    "total_errors": 5070
+  },
+  "Rapira-worker-home": {
+    "app_cpu_us_per_response": {
+      "max": 143.33069582298697,
+      "median": 130.39692135375833,
+      "min": 115.38192761737145,
+      "n": 8,
+      "spread_pct": 21.433610483634304
+    },
+    "highest_clean_stage": {
+      "max": 2500,
+      "median": 2500.0,
+      "min": 2500,
+      "n": 8,
+      "spread_pct": 0.0
+    },
+    "max_rps": {
+      "max": 95700.60767967992,
+      "median": 87563.95675132339,
+      "min": 79058.39380413643,
+      "n": 8,
+      "spread_pct": 19.005781023356924
+    },
+    "relative_to_php_fpm": {
+      "max": 13.038246864791983,
+      "median": 12.028209251678756,
+      "min": 11.67030358989233,
+      "n": 8,
+      "spread_pct": 11.372792460429903
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 128.3044663403551,
+        "errors": 14571,
+        "highest_clean_stage": 2500,
+        "max_rps": 89713.2534776829
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 124.09814077251073,
+        "errors": 15288,
+        "highest_clean_stage": 2500,
+        "max_rps": 92715.92033296623
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 134.61901507687517,
+        "errors": 14521,
+        "highest_clean_stage": 2500,
+        "max_rps": 83874.94190562614
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 134.04435877854064,
+        "errors": 14305,
+        "highest_clean_stage": 2500,
+        "max_rps": 85414.66002496389
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 132.48937636716158,
+        "errors": 14027,
+        "highest_clean_stage": 2500,
+        "max_rps": 84666.90705222492
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 143.33069582298697,
+        "errors": 13281,
+        "highest_clean_stage": 2500,
+        "max_rps": 79058.39380413643
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 118.63182486942652,
+        "errors": 15529,
+        "highest_clean_stage": 2500,
+        "max_rps": 94106.57205423436
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 115.38192761737145,
+        "errors": 15354,
+        "highest_clean_stage": 2500,
+        "max_rps": 95700.60767967992
+      }
+    },
+    "total_errors": 116876
+  },
+  "RoadRunner-DB-postgres-orders": {
+    "app_cpu_us_per_response": {
+      "max": 889.6848994113986,
+      "median": 822.9965892885709,
+      "min": 764.8234525554117,
+      "n": 8,
+      "spread_pct": 15.171563100148674
+    },
+    "highest_clean_stage": {
+      "max": 5000,
+      "median": 5000.0,
+      "min": 5000,
+      "n": 8,
+      "spread_pct": 0.0
+    },
+    "max_rps": {
+      "max": 9559.359349918104,
+      "median": 8897.92806893664,
+      "min": 8349.90345883435,
+      "n": 8,
+      "spread_pct": 13.592556398675098
+    },
+    "relative_to_php_fpm": {
+      "max": 2.0563255065584816,
+      "median": 1.982334680921415,
+      "min": 1.9134565140282362,
+      "n": 8,
+      "spread_pct": 7.207107553798027
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 793.8610602099234,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 9254.932074305822
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 764.8234525554117,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 9559.359349918104
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 844.0042014999027,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 8779.38406452102
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 873.0932296356134,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 8633.776337737381
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 889.6848994113986,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 8349.90345883435
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 875.9498593096813,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 8532.44709602835
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 801.988977077239,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 9016.47207335226
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 794.8513777975493,
+        "errors": 0,
+        "highest_clean_stage": 5000,
+        "max_rps": 9086.5339589772
+      }
+    },
+    "total_errors": 0
+  },
+  "RoadRunner-home": {
+    "app_cpu_us_per_response": {
+      "max": 417.8681225415598,
+      "median": 387.18065023010786,
+      "min": 355.0610759489847,
+      "n": 8,
+      "spread_pct": 16.221638802261378
+    },
+    "highest_clean_stage": {
+      "max": 25000,
+      "median": 25000.0,
+      "min": 15000,
+      "n": 8,
+      "spread_pct": 40.0
+    },
+    "max_rps": {
+      "max": 33038.80631323424,
+      "median": 30307.542666417456,
+      "min": 28416.792422188686,
+      "n": 8,
+      "spread_pct": 15.250374937744526
+    },
+    "relative_to_php_fpm": {
+      "max": 4.410735103114498,
+      "median": 4.227861927577694,
+      "min": 4.030391186848792,
+      "n": 8,
+      "spread_pct": 8.99612907850138
+    },
+    "replicas": {
+      "r1-pass1": {
+        "app_cpu_us_per_response": 371.72845331941147,
+        "errors": 0,
+        "highest_clean_stage": 25000,
+        "max_rps": 31779.230726692935
+      },
+      "r1-pass2": {
+        "app_cpu_us_per_response": 355.0610759489847,
+        "errors": 0,
+        "highest_clean_stage": 25000,
+        "max_rps": 33038.80631323424
+      },
+      "r2-pass1": {
+        "app_cpu_us_per_response": 386.02424975871145,
+        "errors": 0,
+        "highest_clean_stage": 20000,
+        "max_rps": 30159.808200159834
+      },
+      "r2-pass2": {
+        "app_cpu_us_per_response": 377.2492153393932,
+        "errors": 0,
+        "highest_clean_stage": 25000,
+        "max_rps": 31003.550974268794
+      },
+      "r3-pass1": {
+        "app_cpu_us_per_response": 417.8681225415598,
+        "errors": 0,
+        "highest_clean_stage": 15000,
+        "max_rps": 28416.792422188686
+      },
+      "r3-pass2": {
+        "app_cpu_us_per_response": 402.9644549561434,
+        "errors": 0,
+        "highest_clean_stage": 20000,
+        "max_rps": 28981.930525631316
+      },
+      "r4-pass1": {
+        "app_cpu_us_per_response": 395.8447916042414,
+        "errors": 0,
+        "highest_clean_stage": 25000,
+        "max_rps": 29533.42996632845
+      },
+      "r4-pass2": {
+        "app_cpu_us_per_response": 388.33705070150427,
+        "errors": 0,
+        "highest_clean_stage": 25000,
+        "max_rps": 30455.277132675077
+      }
+    },
+    "total_errors": 0
+  }
+}

@@ -58,7 +58,7 @@ Server releases checked on 2026-09-22 are pinned in the benchmark Dockerfile and
 | RoadRunner | [2025.1.15](https://github.com/roadrunner-server/roadrunner/releases/tag/v2025.1.15) |
 | FreeUnit | [1.36.1](https://github.com/freeunitorg/freeunit/releases/tag/1.36.1) |
 | Rapira (all modes) | [0.8.1](https://github.com/rapira-rs/rapira/releases/tag/v0.8.1) |
-| OxPHP (both modes) | [nightly e05777b0](https://github.com/oxphp/oxphp/commit/e05777b03cb085c7e27d9f2d0bc4b3afa836a6b7) |
+| OxPHP (both modes) | [0.12.0](https://github.com/oxphp/oxphp/releases/tag/v0.12.0) |
 | Nginx | [1.31.6 (mainline)](https://nginx.org/en/download.html) |
 | PostgreSQL | [18.6](https://www.postgresql.org/support/versioning/) |
 | Valkey | [9.1.2](https://github.com/valkey-io/valkey/releases/tag/9.1.2) |
@@ -66,11 +66,11 @@ Server releases checked on 2026-09-22 are pinned in the benchmark Dockerfile and
 FreeUnit's published `latest-php8.5` image still contains 1.35.5. Its build target therefore compiles
 the checksummed 1.36.1 release source against PHP 8.5.10, with TLS and compression support. Optional
 JavaScript routing and OpenTelemetry modules are not built; the benchmark does not use them.
-OxPHP is built from its nightly PHP 8.5 image for commit `e05777b0`, pinned by digest (linux/amd64 only). No
-release includes that commit yet, and it matters here: with OxPHP 0.11.0 a client that hung up mid-request could
-leave a persistent Valkey or PostgreSQL connection out of sync, and the suite's end-of-stage disconnects turned that
-into 500 responses. The nightly image ships PHP 8.5.11 rather than 8.5.10. Like every OxPHP image it is Alpine-based
-and ZTS; the other runtimes use Debian images. The base image changes the bundled libpq: Alpine 3.23 ships
+OxPHP is built from its published `0.12.0-php8.5.11-alpine3.23` image. 0.12.0 is the first release that is safe for
+this suite: with 0.11.0 a client that hung up mid-request could leave a persistent Valkey or PostgreSQL connection
+out of sync, and the suite's end-of-stage disconnects turned that into 500 responses. The image ships PHP 8.5.11
+rather than 8.5.10. Like every OxPHP image it is Alpine-based and ZTS; the other runtimes use Debian images.
+The base image changes the bundled libpq: Alpine 3.23 ships
 libpq 18, where `pdo_pgsql` closes a prepared statement with a protocol-level message, while Debian bookworm ships
 libpq 15, where it sends a separate `DEALLOCATE` statement and waits for the reply. The application code and the
 queries it runs are the same, but `/postgres/orders` results include that difference.

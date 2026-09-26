@@ -1,0 +1,148 @@
+{
+    "schema": "wrkx-summary-v1",
+    "runs": [
+        {
+            "durationUs": 30007918,
+            "requests": 75024,
+            "responses": 75024,
+            "errors": 0,
+            "bytes": 1069542144,
+            "latencyAvgUs": 2921.071,
+            "latencyP95Us": 5119,
+            "latencyP99Us": 6231,
+            "targetRate": 2500
+        },
+        {
+            "durationUs": 30031608,
+            "requests": 149614,
+            "responses": 149614,
+            "errors": 0,
+            "bytes": 2132897184,
+            "latencyAvgUs": 3690.055,
+            "latencyP95Us": 6715,
+            "latencyP99Us": 8231,
+            "targetRate": 5000
+        },
+        {
+            "durationUs": 30002434,
+            "requests": 261292,
+            "responses": 261292,
+            "errors": 0,
+            "bytes": 3724978752,
+            "latencyAvgUs": 2369383.234,
+            "latencyP95Us": 3571711,
+            "latencyP99Us": 3743743,
+            "targetRate": 10000
+        },
+        {
+            "durationUs": 30005805,
+            "requests": 256067,
+            "responses": 256067,
+            "errors": 0,
+            "bytes": 3650491152,
+            "latencyAvgUs": 8946772.573,
+            "latencyP95Us": 12500991,
+            "latencyP99Us": 12820479,
+            "targetRate": 15000
+        },
+        {
+            "durationUs": 30002127,
+            "requests": 260859,
+            "responses": 260859,
+            "errors": 0,
+            "bytes": 3718805904,
+            "latencyAvgUs": 11157407.769,
+            "latencyP95Us": 16244735,
+            "latencyP99Us": 16793599,
+            "targetRate": 20000
+        },
+        {
+            "durationUs": 30001112,
+            "requests": 260811,
+            "responses": 260811,
+            "errors": 0,
+            "bytes": 3718125712,
+            "latencyAvgUs": 13269228.105,
+            "latencyP95Us": 18857983,
+            "latencyP99Us": 19398655,
+            "targetRate": 25000
+        },
+        {
+            "durationUs": 30008825,
+            "requests": 263459,
+            "responses": 263459,
+            "errors": 0,
+            "bytes": 3755893945,
+            "latencyAvgUs": 13886973.167,
+            "latencyP95Us": 20332543,
+            "latencyP99Us": 21004287,
+            "targetRate": 30000
+        },
+        {
+            "durationUs": 30003824,
+            "requests": 260095,
+            "responses": 260095,
+            "errors": 0,
+            "bytes": 3707932667,
+            "latencyAvgUs": 15729326.133,
+            "latencyP95Us": 22675455,
+            "latencyP99Us": 23298047,
+            "targetRate": 40000
+        },
+        {
+            "durationUs": 30003247,
+            "requests": 261643,
+            "responses": 261643,
+            "errors": 0,
+            "bytes": 3729996857,
+            "latencyAvgUs": 16405488.802,
+            "latencyP95Us": 23887871,
+            "latencyP99Us": 24575999,
+            "targetRate": 50000
+        },
+        {
+            "durationUs": 30007496,
+            "requests": 258717,
+            "responses": 258717,
+            "errors": 0,
+            "bytes": 3688269552,
+            "latencyAvgUs": 17757175.378,
+            "latencyP95Us": 25640959,
+            "latencyP99Us": 26345471,
+            "targetRate": 75000
+        },
+        {
+            "durationUs": 30006114,
+            "requests": 262075,
+            "responses": 262075,
+            "errors": 0,
+            "bytes": 3736141200,
+            "latencyAvgUs": 18163892.938,
+            "latencyP95Us": 26345471,
+            "latencyP99Us": 27131903,
+            "targetRate": 100000
+        },
+        {
+            "durationUs": 30004228,
+            "requests": 262603,
+            "responses": 262603,
+            "errors": 0,
+            "bytes": 3743682617,
+            "latencyAvgUs": 18845000.257,
+            "latencyP95Us": 27230207,
+            "latencyP99Us": 28016639,
+            "targetRate": 150000
+        },
+        {
+            "durationUs": 30006039,
+            "requests": 261936,
+            "responses": 261936,
+            "errors": 0,
+            "bytes": 3734159616,
+            "latencyAvgUs": 18904840.567,
+            "latencyP95Us": 27623423,
+            "latencyP99Us": 28442623,
+            "targetRate": 200000
+        }
+    ]
+}
