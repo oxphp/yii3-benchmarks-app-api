@@ -27,11 +27,12 @@ ignore_user_abort(true);
  * Runs the Yii HTTP application in OxPHP worker mode.
  *
  * There is no Yii runner package for OxPHP yet, so this is the per-request loop of
- * yiisoft/yii-runner-frankenphp (BSD-3-Clause) with only the server call swapped:
+ * yiisoft/yii-runner-frankenphp (BSD-3-Clause) with the server call swapped:
  * the same container bootstrap, the same `start()` / `afterEmit()` / `shutdown()`
- * events, the same `StateResetter::reset()` and `gc_collect_cycles()` after every
- * request, and the same `ErrorCatcher` fallback. Requests are built by the
- * `RequestFactory` the classic runners use.
+ * events, the same `StateResetter::reset()` after every request, and the same
+ * `ErrorCatcher` fallback. Requests are built by the `RequestFactory` the classic
+ * runners use. Unlike that runner, it does not call `gc_collect_cycles()` after
+ * every request: OxPHP collects cycles itself every 100 requests.
  */
 final class OxPHPApplicationRunner extends ApplicationRunner
 {
@@ -110,7 +111,6 @@ final class OxPHPApplicationRunner extends ApplicationRunner
         /** @var StateResetter $stateResetter */
         $stateResetter = $container->get(StateResetter::class);
         $stateResetter->reset();
-        gc_collect_cycles();
     }
 
     private function registerErrorHandler(ErrorHandler $registered, ?ErrorHandler $unregistered = null): void
